@@ -24,7 +24,7 @@ jobs:
       - name: Notarize Docker image
         #--> Run the GitHub action
         # uses: codenotary/cas-notarize-docker-image-github-action@v1.0.0
-        uses: codenotary/cas-notarize-docker-image-github-action@main
+        uses: codenotary/cas-notarize-docker-image-bom-github-action@main
         with:
           # make it notarize it's own Docker image B-)
           asset: docker://codenotary/cas:bom-docker
